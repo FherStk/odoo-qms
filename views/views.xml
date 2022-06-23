@@ -1,32 +1,31 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-<!--
+
     <record model="ir.ui.view" id="qms.list">
       <field name="name">QMS list</field>
-      <field name="model">qms.qms</field>
+      <field name="model">qms.process</field>
       <field name="arch" type="xml">
         <tree>
-          <field name="name"/>
-          <field name="value"/>
-          <field name="value2"/>
+          <field name="code"/>
+          <field name="name"/>          
         </tree>
       </field>
     </record>
--->
+
 
     <!-- actions opening views on models -->
-<!--
+
     <record model="ir.actions.act_window" id="qms.action_window">
       <field name="name">QMS window</field>
-      <field name="res_model">qms.qms</field>
+      <field name="res_model">qms.process</field>
       <field name="view_mode">tree,form</field>
     </record>
--->
+
 
     <!-- server action to the one above -->
-<!--
-    <record model="ir.actions.server" id="qms.action_server">
+
+    <!-- <record model="ir.actions.server" id="qms.action_server">
       <field name="name">QMS server</field>
       <field name="model_id" ref="model_qms_qms"/>
       <field name="state">code</field>
@@ -37,24 +36,24 @@
           "res_model": model._name,
         }
       </field>
-    </record>
--->
+    </record> -->
+
 
     <!-- Top menu item -->
-<!--
+
     <menuitem name="QMS" id="qms.menu_root"/>
--->
+
     <!-- menu categories -->
-<!--
+
     <menuitem name="Menu 1" id="qms.menu_1" parent="qms.menu_root"/>
-    <menuitem name="Menu 2" id="qms.menu_2" parent="qms.menu_root"/>
--->
+    <!-- <menuitem name="Menu 2" id="qms.menu_2" parent="qms.menu_root"/> -->
+
     <!-- actions -->
-<!--
+
     <menuitem name="List" id="qms.menu_1_list" parent="qms.menu_1"
               action="qms.action_window"/>
-    <menuitem name="Server to list" id="qms" parent="qms.menu_2"
-              action="qms.action_server"/>
--->
+    <!-- <menuitem name="Server to list" id="qms" parent="qms.menu_2"
+              action="qms.action_server"/> -->
+
   </data>
 </odoo>
