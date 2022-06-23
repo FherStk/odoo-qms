@@ -22,7 +22,7 @@ Set the proper permissions for the devel user, in order to allow remote access a
 VSCode is recommended to perform any kind of modifications, using the Microsoft's SSH plugin for remote developing.
 
 #### Installing the module using the CLI interface
-The process must be stopped before any command execution.
+The process must be stopped -before any command execution.
 
 `sudo service odoo stop && sudo -u odoo bash -c 'odoo -d <bbdd> -i qms --stop-after-init -c /etc/odoo/odoo.conf' && sudo service odoo start`
 
@@ -30,3 +30,8 @@ The process must be stopped before any command execution.
 The process must be stopped before any command execution.
 
 `sudo service odoo stop && sudo -u odoo bash -c 'odoo -d <bbdd> -u qms --stop-after-init -c /etc/odoo/odoo.conf' && sudo service odoo start`
+
+#### Running any command using Odoo user
+Odoo uses the odoo user to work.
+
+`sudo su - odoo -s /bin/bash`

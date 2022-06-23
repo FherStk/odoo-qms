@@ -17,7 +17,7 @@
     <!-- actions opening views on models -->
 
     <record model="ir.actions.act_window" id="qms.action_window">
-      <field name="name">QMS window</field>
+      <field name="name">QMS</field>
       <field name="res_model">qms.process</field>
       <field name="view_mode">tree,form</field>
     </record>

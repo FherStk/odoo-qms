@@ -4,10 +4,12 @@
 
     'summary': """
         QMS: Quality Management System
-        SGQ: Sistema de Gestió de la Qualitat""",
+        SGQ: Sistema de Gestió de la Qualitat
+    """,
 
     'description': """
-        Long description of module's purpose
+        QMS: Quality Management System
+        SGQ: Sistema de Gestió de la Qualitat
     """,
 
     'author': "Fernando Porrino Serrano",
@@ -24,7 +26,7 @@
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
+        'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
     ],
@@ -32,5 +34,5 @@
     'demo': [
         'demo/demo.xml',
     ],
-    'Application': True
+    'application': True
 }

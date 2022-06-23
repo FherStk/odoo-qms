@@ -1,2 +1,2 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_qms_qms,qms.qms,model_qms_qms,base.group_user,1,1,1,1
+access_qms_process,qms.process,model_qms_process,base.group_user,1,1,1,1
